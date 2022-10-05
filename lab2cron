@@ -1,1 +1,1 @@
-* * * * * root /opt/lab2/lab2.sh > /proc/1/fd/1 2>/proc/1/fd/2
+* 22 * * * root /opt/lab2/lab2.sh > /proc/1/fd/1 2>/proc/1/fd/2
