@@ -8,9 +8,9 @@ error() {
 
 main () {
     declare options="-Pn -p- -A"
-    declare ipconfig="/opt/infa735lab2/lab2.conf"
-    declare tcpreport="/opt/infa735lab2/reports/tcp-$(date +'%Y-%m-%d').nmap"
-    declare udpreport="/opt/infa735lab2/reports/udp-$(date +'%Y-%m-%d').nmap"
+    declare ipconfig="/opt/lab2/lab2.conf"
+    declare tcpreport="/opt/lab2/reports/tcp-$(date +'%Y-%m-%d').nmap"
+    declare udpreport="/opt/lab2/reports/udp-$(date +'%Y-%m-%d').nmap"
 
     nmap "${options}" -sS -iL "${ipconfig}" -oN "${tcpreport}"
     if [[ "$?" -ne 0 ]]; then
